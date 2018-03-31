@@ -3,11 +3,14 @@ var authToken = '5a69703bea1e2609fe83fd47c1238679';   // Your Auth Token from ww
 
 var twilio = require('twilio');
 var client = new twilio(accountSid, authToken);
-
+//var date = new Date();
+const moment = require('moment');
+var time = moment().hours()+"."+moment().minutes()
+console.log(time);
 
   client.messages.create({
-      body: 'Hello from habeeb at 11.17',
-      to: '+918328018091',  // Text this number
+      body: 'Hello from habeeb at '+time,
+      to: '+919700799223',  // Text this number
       from: '+19492983673' // From a valid Twilio number
   })
   .then((message) => {
