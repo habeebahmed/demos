@@ -18,3 +18,4 @@ console.log(time);
     console.log('message sent');
     console.log(message.sid)
   });
+//https://support.twilio.com/hc/en-us/articles/223134167-Limitations-sending-SMS-messages-to-Indian-mobile-devices
